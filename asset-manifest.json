@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ruby-bonilla-portfolio/static/css/main.44a74efd.css",
-    "main.js": "/ruby-bonilla-portfolio/static/js/main.254ec0fe.js",
+    "main.css": "/ruby-bonilla-portfolio/static/css/main.d5a14d0f.css",
+    "main.js": "/ruby-bonilla-portfolio/static/js/main.d8e4376a.js",
     "static/js/787.ff23b25e.chunk.js": "/ruby-bonilla-portfolio/static/js/787.ff23b25e.chunk.js",
     "index.html": "/ruby-bonilla-portfolio/index.html",
-    "main.44a74efd.css.map": "/ruby-bonilla-portfolio/static/css/main.44a74efd.css.map",
-    "main.254ec0fe.js.map": "/ruby-bonilla-portfolio/static/js/main.254ec0fe.js.map",
+    "main.d5a14d0f.css.map": "/ruby-bonilla-portfolio/static/css/main.d5a14d0f.css.map",
+    "main.d8e4376a.js.map": "/ruby-bonilla-portfolio/static/js/main.d8e4376a.js.map",
     "787.ff23b25e.chunk.js.map": "/ruby-bonilla-portfolio/static/js/787.ff23b25e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44a74efd.css",
-    "static/js/main.254ec0fe.js"
+    "static/css/main.d5a14d0f.css",
+    "static/js/main.d8e4376a.js"
   ]
 }
