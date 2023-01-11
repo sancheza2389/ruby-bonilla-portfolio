@@ -1,0 +1,38 @@
+.home{
+    align-self: center;
+
+    @media (max-width: $breakpoint-mobile) {
+        margin-left: 0;
+    }
+
+    & .heading{
+        @media (max-width: $breakpoint-mobile) {
+            text-align: center;
+        }
+    }
+}
+
+.header{
+
+    & .greeting{
+        display: flex;
+        height: 28px;
+
+        @include justify-center-mobile;
+    }
+
+    @include justify-center-mobile;
+
+    & .heading-md{
+        transform: translate(-15px,2px);
+
+        @media (max-width: $breakpoint-tablet) {
+            transform: translate(-13px,5px);
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            transform: translate(-11px,6px);
+        }
+    }
+}
+

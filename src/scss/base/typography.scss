@@ -1,0 +1,134 @@
+.heading{
+    color: $dark-pink;
+    font-family: $serif;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+
+
+    &-container{
+        @media (max-width: $breakpoint-mobile) {
+            display: inline-block;
+
+            & .heading{
+                display: inherit;
+            }
+        }
+    }
+
+    &-main{
+        font-size: 57px;
+        line-height: 57px;
+        padding: 6px 0;
+
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 47px;
+            line-height: 47px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+
+    &-lrg{
+        font-size: 45px;
+        line-height: 45px;
+        padding: 6px 0;
+
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 35px;
+            line-height: 35px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 25px;
+            line-height: 25px;
+        }
+    }
+
+    &-md{
+        font-size: 20px;
+
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+
+    &-sml{
+        font-size: 15px;
+
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 13px;
+            line-height: 13px;
+        }
+    }
+
+    &-gry{
+        font-family: $sans-serif;
+        font-size: 18px;
+        color: $gray;
+        text-align: left;
+        padding-bottom: 6px;
+
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+            text-align: center;
+        }
+    }
+
+    &-underline{
+        height: 3px;
+        width: 50px;
+        background-color: $md-pink;
+        transform: translateY(-2px);
+
+        &_container{
+            height: 1px;
+            width: 300px;
+            background-color: #CBD5E1;
+            margin-top: 5px;
+            margin-bottom: 55px;
+
+            @media (max-width: $breakpoint-mobile) {
+                width: 200px;
+            }
+        }
+    }
+
+
+}
+
+.paragraph{
+    font-family: $sans-serif;
+    color: $gray;
+    text-align: left;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.pink-circle{
+    height: 28px;
+    width: 28px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 50%;
+    background-color: $md-pink;
+    opacity: 50%;
+
+    @media (max-width: $breakpoint-tablet) {
+        height: 26px;
+        width: 26px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+        height: 24px;
+        width: 24px;
+    }
+}

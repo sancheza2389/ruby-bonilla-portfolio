@@ -1,0 +1,30 @@
+.button{
+    display: flex;
+    margin-top: 15px;
+    
+
+    @media (max-width: $breakpoint-mobile) {
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    &-download, &-submit{
+        background-color: $md-pink;
+        font-family: $sans-serif;
+        padding: 15px;
+        color: $white;
+        font-size: 12px;
+        border-radius: 5px;
+        letter-spacing: 3px;
+        
+        transition: all .2s ease-in-out;
+
+        &:hover{
+            background-color: $dark-pink;
+        }
+    }
+
+    &-submit{
+        min-width: 200px;
+    }
+}

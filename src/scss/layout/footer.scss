@@ -1,0 +1,45 @@
+.footer{
+    min-height: 50px;
+    background-color: $dark-pink;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+    gap: 15px;
+
+
+
+    &--caption{
+        display: flex;
+        justify-content: center;
+
+        & span{
+            color: $light-pink;
+            font-family: $serif;
+            font-size: 12px;
+            font-weight: 100;
+        }
+    }
+
+    &--siteMap{
+        display: flex;
+    }
+
+    &--link{
+        color: $light-pink;
+        font-family: $serif;
+        font-size: 12px;
+        font-weight: 100;
+        margin: 0 15px;
+
+        &:not(:first-of-type){
+            display: list-item;
+            list-style-type: circle;
+        }
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

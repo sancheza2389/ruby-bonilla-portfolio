@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'scss/utilities/functions';
+@import 'scss/utilities/mixins';
+@import 'scss/utilities/variables';
+
+@import 'scss/base/reset';
+@import 'scss/base/typography';
+
+@import 'scss/layout/forms';
+@import 'scss/layout/grid';
+@import 'scss/layout/header';
+@import 'scss/layout/pagecontainer';
+@import 'scss/layout/pageImages';
+@import 'scss/layout/imageColumn';
+@import 'scss/layout/footer';
+@import 'scss/layout/scrollBar';
+
+
+
+
+@import 'scss/components/buttons';
+@import 'scss/components/filter_table';
+@import 'scss/components/experienceTable';
+
+
+@import 'scss/pages/about';
+@import 'scss/pages/contact';
+@import 'scss/pages/home';
+@import 'scss/pages/projects';
+
+
+body{
+    background-color: $light-pink;
+    position: absolute;
+    right: 0;
+}
+.green{
+    background-color: green;
+    height: 50px;
+    width: 100px;
+    color: white;
+}
+.red{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    color: white;
+}
+
+
+
+

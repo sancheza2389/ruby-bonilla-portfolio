@@ -1,0 +1,84 @@
+.contact{
+
+    &__container{           
+        padding: 20px;
+        border: 1px solid $md-pink;
+        max-width: 1050px;
+    } 
+
+
+    &-form{   
+        &__row1{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 50px;
+            & .contact-form--input{
+                flex-grow: 1;          
+            }
+        }
+        &--submit{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;         
+        }
+        &--input{
+            margin-top: 25px;
+            @media (max-width: $breakpoint-tablet) {
+                margin-top: 20px;
+            }
+            & input, textarea{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid $md-pink;
+                transition: .2s all ease-in-out;
+                &::placeholder{
+                    font-family: $sans-serif;
+                    color: $gray;
+                    font-size: 14px;
+                }
+                &:focus{
+                    -webkit-box-shadow: inset 0px 0px 10px -3px rgba($md-pink,0.74); 
+                    box-shadow: inset 0px 0px 10px -3px rgba($md-pink,0.74);
+                    outline: none;
+                }
+            }
+            & input{
+                height: 32px;
+            }
+            & textarea{
+                margin-bottom: 25px;
+                height: 150px;
+            }
+            & label{
+                visibility: hidden;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.cards{
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card__container{
+    padding: 25px;
+    border: 1px solid $md-pink;
+    width: 330px;
+
+    & img{
+        margin-bottom: 20px;
+    }
+
+    & h5{
+
+    }
+
+    & p{
+        padding: 0;
+    }
+}

@@ -1,0 +1,57 @@
+.home--image{
+    content: url(
+        https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/home-image-lrg_fZeDP2Ci0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673030033488
+    );
+}
+.about--image{
+    content: url(
+        https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/projects-image-lrg_k2TCT59yz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673030033449
+    );
+}
+.projects-image{
+    content: url(
+        https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/projects-image-lrg_k2TCT59yz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673030033449
+    );
+}
+.contact-image{
+    content: url(
+        https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/projects-image-lrg_k2TCT59yz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673030033449
+    );
+}
+
+.imageColumn__container{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    display: inline-block;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-shrink: 0;
+
+}
+
+
+.page{
+
+    &__container{
+        display: flex;
+        min-height: 101vh;
+
+        @media (max-width: $breakpoint-mobile) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    &--content{
+        padding: 100px 60px;
+        flex-grow: 2;
+
+        @media (max-width: $breakpoint-mobile) {
+            flex-grow: 1;
+            padding: 100px 40px;
+        }
+
+    }
+}

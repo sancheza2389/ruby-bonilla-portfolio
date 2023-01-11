@@ -1,0 +1,68 @@
+
+.home--image{
+    content: url(
+        https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/home-image-lrg_fZeDP2Ci0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673030033488
+    );
+
+    @media (max-width: $breakpoint-tablet) {
+        content: url(
+            https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/home-image-sml-alt_bTd7l9oOv?ik-sdk-version=javascript-1.4.3&updatedAt=1673045419830
+        );
+    }
+}
+.about--image{
+    content: url(
+        https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/projects-image-lrg_k2TCT59yz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673030033449
+            );
+
+            @media (max-width: $breakpoint-tablet) {
+                content: url(
+                    https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/projects-image-sml_QESFaf7zE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673044574406
+                );
+            }
+}
+.projects--image{
+    content: url(
+        https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/about-image-lrg_k25w_x1P4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673030033759
+    );
+
+            @media (max-width: $breakpoint-tablet) {
+                content: url(
+                    https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/about-image-sml__FfN3XYfW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673044574424
+                );
+            }
+}
+.contact--image{
+    content: url(
+        https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/contact-image-lrg2_m8423w7XJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673045243540
+            );
+
+            @media (max-width: $breakpoint-tablet) {
+                content: url(
+                    https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/contact-image-aml2_29wDFqukr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673045243411
+                );
+            }
+}
+
+.imageColumn__container{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    display: inline-block;
+    top: 0;
+    height: 100vh;
+    white-space: nowrap;
+
+    & img{
+        min-height: 100%;
+        min-width: 380px;
+
+        @media (max-width: $breakpoint-tablet){
+            min-width: 150px;
+            width: 150px;
+        }
+
+        @media (max-width: $breakpoint-mobile){
+            display: none;
+        }
+    }
+}

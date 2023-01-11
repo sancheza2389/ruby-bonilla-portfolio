@@ -1,0 +1,8 @@
+@mixin justify-center-mobile {
+
+    @media (max-width: $breakpoint-mobile) {
+        justify-content: center;
+        width: 100vw;
+    }
+
+}

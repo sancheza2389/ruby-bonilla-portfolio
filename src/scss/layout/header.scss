@@ -1,0 +1,165 @@
+.nav{
+    &__container{
+        position: absolute;
+        right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 370px;
+
+        @media(max-width: $breakpoint-mobile){
+            left: 0; 
+            max-width: none;
+            width: 100vw; 
+        }
+    }
+    &--menu{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        background-color: $dark-pink;
+        width: 310px;
+        padding: 20px;
+        transform: translate(60px, -172.5px);
+        transition: .4s all ease-in-out;
+        z-index: 10;
+
+        @media(max-width: $breakpoint-mobile){
+            //flex-grow: 1;
+            transform: translate(0px, -172.5px);
+            width: 100vw;
+        }
+
+        &__active{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            background-color: $dark-pink;
+            width: 310px;
+            padding: 20px;
+            transform: translateX(60px);
+            transition: .4s all ease-in-out;
+            z-index: 10;
+
+            @media(max-width: $breakpoint-mobile){
+                transform: translateX(0px);
+                width: 100vw;
+            }
+        }
+    }
+
+    &--link{
+        display: block;
+        color: $light-pink;
+        flex-basis: 100%;
+        font-family: $sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    &--button__container{
+        height: 60px;
+        width: 60px;
+        background-color: $dark-pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        z-index: 100;
+
+        @media(max-width: $breakpoint-mobile){
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        transform: rotate(90deg);
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:hover .nav--button{
+            height: 30px;
+
+            &::before{
+                height: 40px;
+                top: -5px;
+            }
+            &::after{
+                height: 40px;
+                top: -45px;
+            }
+        }
+        &:hover .nav--button__active{
+
+            &::before{
+                transform: rotate(-50deg);
+            }
+            &::after{
+                transform: rotate(50deg);
+            }
+        }
+    }
+
+    &--button{
+        height: 40px;
+        width: 2px;
+        background-color: $light-pink;
+        transition: .2s all ease-in-out;
+        &::before{
+            display: block;
+            content: '';
+            height: 30px;
+            width: 3px;
+            background-color: $light-pink;
+            position: relative;
+            right: -10px;
+            top: 5px;
+            transition: .2s all ease-in-out;
+        }
+        &::after{
+            display: block;
+            content: '';
+            height: 30px;
+            width: 3px;
+            background-color: $light-pink;
+            position: relative;
+            right: 10px;
+            top: -25px;
+            transition: .2s all ease-in-out;
+        }
+
+        &__active{
+            height: 40px;
+            width: 3px;
+            visibility: hidden;
+            &::before{
+                display: block;
+                visibility: visible;
+                content: '';
+                height: 40px;
+                width: 3px;
+                background-color: $light-pink;
+                position: relative;
+                right: 0;
+                transition: .2s all ease-in-out;
+                transform: rotate(50deg);
+            }
+            &::after{
+                visibility: visible;
+                display: block;
+                content: '';
+                height: 40px;
+                width: 3px;
+                background-color: $light-pink;
+                position: relative;
+                top: -40px;
+                transition: .2s all ease-in-out;
+                transform: rotate(-50deg);
+            }
+        }
+    }
+}
+
