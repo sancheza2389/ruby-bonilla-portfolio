@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.44a74efd.css",
-    "main.js": "/react-gh-pages/static/js/main.847f5f2e.js",
-    "static/js/787.ff23b25e.chunk.js": "/react-gh-pages/static/js/787.ff23b25e.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.44a74efd.css.map": "/react-gh-pages/static/css/main.44a74efd.css.map",
-    "main.847f5f2e.js.map": "/react-gh-pages/static/js/main.847f5f2e.js.map",
-    "787.ff23b25e.chunk.js.map": "/react-gh-pages/static/js/787.ff23b25e.chunk.js.map"
+    "main.css": "/ruby-bonilla-portfolio/static/css/main.44a74efd.css",
+    "main.js": "/ruby-bonilla-portfolio/static/js/main.254ec0fe.js",
+    "static/js/787.ff23b25e.chunk.js": "/ruby-bonilla-portfolio/static/js/787.ff23b25e.chunk.js",
+    "index.html": "/ruby-bonilla-portfolio/index.html",
+    "main.44a74efd.css.map": "/ruby-bonilla-portfolio/static/css/main.44a74efd.css.map",
+    "main.254ec0fe.js.map": "/ruby-bonilla-portfolio/static/js/main.254ec0fe.js.map",
+    "787.ff23b25e.chunk.js.map": "/ruby-bonilla-portfolio/static/js/787.ff23b25e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44a74efd.css",
-    "static/js/main.847f5f2e.js"
+    "static/js/main.254ec0fe.js"
   ]
 }
