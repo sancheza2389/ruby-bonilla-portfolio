@@ -1,19 +1,19 @@
 const whatIDoList = [
     {
         name: "Copywriting",
-        description: "It is a long established fact that a reader will be distracted by the readable content.",
+        description: "Copywriting is the craft of writing compelling, persuasive and effective language that drives action by communicating effectively and strategically. See my copywriting success stories here.",
         icon: "pencil",
         key: 1
     },
     {
         name: "Project Management",
-        description: "It is a long established fact that a reader will be distracted by the readable content.",
+        description: "Project management is the process of planning, organizing and managing resources to bring about the successful completion of specific project goals and objectives. See my project management success stories here.",
         icon: "projectMgmt",
         key: 2
     },
     {
         name: "Consultant",
-        description: "It is a long established fact that a reader will be distracted by the readable content.",
+        description: "Guiding veterans, moms, and school teachers into their dream careers - free of charge. Click here to learn more about how to work with me.",
         icon: "cellPhone",
         key: 3
     }

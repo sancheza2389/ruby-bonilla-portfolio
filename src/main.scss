@@ -37,17 +37,28 @@ body{
     position: absolute;
     right: 0;
 }
+
+.message{
+    color: $white;
+    font-size: 15px;
+    font-family: $serif;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 18px;
+    border-radius: 10px;
+}
+.message-hidden{
+    opacity: 0;
+    transition: all 250ms linear;
+}
+
 .green{
     background-color: green;
-    height: 50px;
-    width: 100px;
-    color: white;
 }
 .red{
     background-color: red;
-    height: 50px;
-    width: 100px;
-    color: white;
 }
 
 

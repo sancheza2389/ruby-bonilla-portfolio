@@ -46,19 +46,31 @@ function ContactForm() {
 
         try {
             const result = await axios.post(formSparkUrl, payload);
-            console.log(result);
+            //console.log(result);
             setMessage({
-                class: "green",
+                class: "green message",
                 text: "Thank you, I will reach out soon!",
             });
+            setTimeout(()=>{
+                setMessage({
+                    class: "message message-hidden",
+                    text: "Thank you, I will reach out soon!",
+                });
+            }, 2000);
             setFormState(initialFormState);
             recaptchaRef.current.reset();
         } catch(error) {
-            console.log(error);
+            //console.log(error);
             setMessage({
-                class: "red",
-                text: "Sorry, there was a problem",
+                class: "red message",
+                text: "Sorry, there was a error. Please try again",
             });
+            setTimeout(()=>{
+                setMessage({
+                    class: "message message-hidden",
+                    text: "Sorry, there was a error. Please try again",
+                });
+            }, 2000);
         }
     };
     const updateFormControl = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

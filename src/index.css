@@ -401,11 +401,11 @@ html, body {
 }
 
 .home--image {
-  content: url(https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/home-image-lrg_fZeDP2Ci0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673030033488);
+  content: url(https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/Untitled_design_-_2023-02-22T115847.940_ml1EDOM206.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677085189574);
 }
 @media (max-width: 1024px) {
   .home--image {
-    content: url(https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/home-image-sml-alt_bTd7l9oOv?ik-sdk-version=javascript-1.4.3&updatedAt=1673045419830);
+    content: url(https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/Untitled_design_-_2023-02-22T115941.441_KZm7Kfie24.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677085189242);
   }
 }
 
@@ -419,11 +419,11 @@ html, body {
 }
 
 .projects--image {
-  content: url(https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/about-image-lrg_k25w_x1P4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673030033759);
+  content: url(https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/Untitled_design_-_2023-01-11T190352.769_SwRPSvt-1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677087578473);
 }
 @media (max-width: 1024px) {
   .projects--image {
-    content: url(https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/about-image-sml__FfN3XYfW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673044574424);
+    content: url(https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/page_images/Untitled_design_-_2023-01-11T190352.7692_1X-J4MZny.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677087578229);
   }
 }
 
@@ -844,18 +844,29 @@ body {
   right: 0;
 }
 
+.message {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.message-hidden {
+  opacity: 0;
+  transition: all 250ms linear;
+}
+
 .green {
   background-color: green;
-  height: 50px;
-  width: 100px;
-  color: white;
 }
 
 .red {
   background-color: red;
-  height: 50px;
-  width: 100px;
-  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

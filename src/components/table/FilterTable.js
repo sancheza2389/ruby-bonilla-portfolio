@@ -2,74 +2,46 @@ import {useState, useEffect} from 'react';
 
 const portfolio = [
     {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T161148.538_ZzMoqjt5f.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298779343",
-        name: "Project 1",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "project manager"],
+        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Main/webzemi_gKOpR37FwJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677085409143",
+        name: "WebZemi",
+        description: "I recently led a web project for Webzemi, a cool web development company in New York. As the project lead, I got to flex my management skills by overseeing the entire project from start to finish. I managed a diverse team of talented web developers, designers, and wordsmiths (aka copywriters) to make sure everything was running smoothly and we hit our deadlines. I also got to work closely with the client to understand their needs and goals, and kept them in the loop with regular updates. It was a wild ride, but we made it to the finish line and launched a killer website that speaks to the team's expertise and meets potential clients where they are!",
+        category: ["all", "project manager", "writer", "consultant"],
         key: 1
     },
     {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T160922.897_TA2DwhlGgz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298779339",
-        name: "Project 2",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "writer", "consultant"],
+        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Main/blogs_GPPtqS0LX5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677085409547",
+        name: "Blogs, Books, and Beyond",
+        description: "I had the amazing opportunity to lead a project called 'Blogs, Books, and Beyond' that spanned four continents and nine countries. The goal of this online event was to create a platform for writers, publishers, editors, illustrators, copywriters, and others in the industry to connect, learn from one another, and share their expertise. As project lead, I worked closely with our team to ensure that the event was geared towards catering to the unique needs of all these different groups, while also fostering a sense of community and inclusivity. Despite the challenges of coordinating across different time zones and cultures, we were able to successfully execute an event that brought together creative minds from all over the world. ",
+        category: ["all", "consultant"],
         key: 2
     },
     {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T161040.163_PUp6GPVlU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298779322",
-        name: "Project 3",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "writer"],
+        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Main/acuity_-7x-Eo1t4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677085408764",
+        name: "Acuity Brands",
+        description: "I had the opportunity to lead a project aimed at revamping the Investor Relations website for Acuity Brands, a leading technology company. As project lead, I worked closely with the client to understand their goals and vision for the site, as well as the needs of their stakeholders. We wanted to create a site that not only provided relevant information to investors, but also highlighted the company's values and successes. To achieve this, I worked with a team of talented web developers, designers, and copywriters to create a site that was easy to navigate, visually appealing, and informative. We also took a mobile-first approach to ensure that the site was accessible to investors on the go. Overall, the project was a great success, and we received positive feedback from the client and their stakeholders.",
+        category: ["all", "project manager"],
         key: 3
     },
     {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T160746.796_EJ5mflM4UB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298779270",
-        name: "Project 4",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "writer", "consultant"],
+        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Main/workhuman_NeAbTgXmo-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677085409710",
+        name: "Spotlight (Workhuman)",
+        description: "I had the pleasure of leading a project to create a website for Spotlight, a major event thrown by Workhuman, a leading provider of human-centered solutions for the workplace. The goal of the website was to provide information about the event and help attendees plan their experience. As project lead, I worked with the Workhuman team to understand their vision for the event and the needs of their audience. I also collaborated with a team of web developers, designers, and content creators to create a site that was visually stunning and easy to navigate. The site featured an interactive schedule, speaker profiles, and other resources to help attendees make the most of the event. It was a rewarding project, and I am proud to have played a part in helping make Spotlight a success.",
+        category: ["all", "project manager"],
         key: 4
     },
     {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T161105.835_bYlgEmBbd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298779260",
-        name: "Project 5",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "project manager"],
+        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Main/kingdom__-AMXW1dj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677085411434",
+        name: "Kingdom Women",
+        description: " Leading the project to create a website for Surreal Eyewear, a leading eyewear retailer, was an exciting and challenging opportunity. Working closely with the team at Surreal Eyewear, I gained a deep understanding of their customer base and unique approach to eyewear sales. My goal was to design a website that captured their brand identity and showcased their extensive collection of eyewear. Collaborating with a team of designers and developers, we created a visually appealing and user-friendly site that made it easy for customers to browse and purchase eyewear. By employing a clean design and seamless functionality, we aimed to enhance the overall user experience, which ultimately contributed to increased sales and customer satisfaction.",
+        category: ["all", "writer", "project manager"],
         key: 5
     },
     {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T161004.429_-rjQM4tJi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298779062",
-        name: "Project 6",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "project manager", "consultant", "writer"],
+        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Main/surreal_Q1Enuk79Ht.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677085411057",
+        name: "Surreal Eyewear",
+        description: "Leading the project to create a website for Surreal Eyewear, a leading eyewear retailer, was an exciting and challenging opportunity. Working closely with the team at Surreal Eyewear, I gained a deep understanding of their customer base and unique approach to eyewear sales. My goal was to design a website that captured their brand identity and showcased their extensive collection of eyewear. Collaborating with a team of designers and developers, we created a visually appealing and user-friendly site that made it easy for customers to browse and purchase eyewear. By employing a clean design and seamless functionality, we aimed to enhance the overall user experience, which ultimately contributed to increased sales and customer satisfaction.",
+        category: ["all", "project manager"],
         key: 6
-    },
-    {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T161027.666_9BEKr2xxam.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298778973",
-        name: "Project 7",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "writer", "consultant"],
-        key: 7
-    },
-    {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T161204.878_f9vyM0J0j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298778784",
-        name: "Project 8",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "project manger"],
-        key: 8
-    },
-    {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T160948.137_hflkx4BeH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298778631",
-        name: "Project 9",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "consultant", "project manager"],
-        key: 9
-    },
-    {
-        image: "https://ik.imagekit.io/webzemi/Ruby-Bonilla-Portfolio/Portfolio/Untitled_design_-_2023-01-09T160803.350_t8ieu54CW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673298778670",
-        name: "Project 10",
-        description: " Lorem ipsum dolor sit amet, ad pro nihil fastidii.",
-        category: ["all", "writer", "consultant"],
-        key: 10
     }
 ];
 

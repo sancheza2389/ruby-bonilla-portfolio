@@ -1,6 +1,7 @@
 {
   "name": "ruby-bonilla-portfolio",
   "version": "0.1.0",
+  "_comment":"homepage https://sancheza2389.github.io/ruby-bonilla-portfolio/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
     "framer-motion": "^8.4.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^2.1.0",
@@ -24,7 +26,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch src/main.scss src/index.css"
+    "sass": "sass --watch src/main.scss src/index.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

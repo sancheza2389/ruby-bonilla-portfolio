@@ -1,7 +1,7 @@
 import ContactForm from "./ContactForm.tsx";
 import ImageColumn from "../layout/ImageColumn";
 import PageHeading from "./PageHeading";
-import ContactCards from "./ContactCards";
+//import ContactCards from "./ContactCards";
 import {motion} from "framer-motion";
 
 
@@ -13,7 +13,6 @@ function Contact() {
             <div className="contact">
                 <PageHeading />
                 <ContactForm />
-                <ContactCards />
             </div>
         </div>
     </motion.div>
